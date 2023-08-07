@@ -1,0 +1,420 @@
+Name: ECharts
+Id: g=cc5d2344de223d433e0a0f267995ba98
+Type: FolderType
+Children:
+- Name: EchartNavigation
+  Id: g=b978a5bae89b9c794c76c8eec796346f
+  Supertype: QNavigation
+  DisplayName: {"LocaleId":"en-US","Text":"EChart Integration"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Panels
+    Id: g=8261e9130b02d82e07e6ed60ce5700fd
+    Type: BaseObjectType
+    Children:
+    - Name: Panel1
+      Id: g=a60d173f2b9efeb793402a9c28ba0035
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Id: g=00dc76bd396c2df5693f85710471ad41
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Line Chart"}
+      - Name: Panel
+        Id: g=f848dfbe4c5810903d22735cd0cdccc0
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"a34a0a4c7baefe3bfc952542662cfd05","Namespace":38}
+        Children:
+        - Name: Kind
+          Id: g=08fcb7a0fb4e15f68fdeb46ae56d5b73
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":71,"Namespace":9}
+    - Name: Panel2
+      Id: g=a70fdb16f283f3d953926d70733864c5
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Id: g=21fe3fd5fd59db407f8f6cfdf7682766
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Bar Chart"}
+      - Name: Panel
+        Id: g=7ec51b46a38b3d62d0860232fdb3eb1c
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"9dca01f6fbbc0e9468b825b0643efb9b","Namespace":38}
+        Children:
+        - Name: Kind
+          Id: g=366c8b3fcecbc7fe7bab8a731a91c697
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":71,"Namespace":9}
+      - Name: AliasNode
+        Id: g=ab7e4ba68e2ef79084ce77abca49f53a
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: Optional
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Panel3
+      Id: g=784d3f37b7c278f64d2099c30019c9be
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Id: g=efbdf75a5b565a22d6341e83d90f59f0
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Heatmap"}
+      - Name: Panel
+        Id: g=053c5d40c9d2f5dfec5d99685ddc91a0
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"47bf9b1f7aba91758f10ba9c5511edb6","Namespace":38}
+        Children:
+        - Name: Kind
+          Id: g=958094506ec06c43c9a6cb7ffd8db366
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":71,"Namespace":9}
+    - Name: Panel4
+      Id: g=4928867420c8026407e63e11d8916440
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Id: g=e4f2f6f741beb9574ea1c54f0329d5ed
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Radar Chart"}
+      - Name: Panel
+        Id: g=f8acc30e8c298d45be1da3a1db9a32d6
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"0cec4cbd042ca9b83e1c1b7c126e9023","Namespace":38}
+        Children:
+        - Name: Kind
+          Id: g=c2dc63c46554db44c7112cc8150a74c6
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":71,"Namespace":9}
+  - Name: CurrentPanel
+    Id: g=1fe16e84dc57efc9ccc86ef0bd3d1403
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=2a8ec094ea99571a68d81c7e751770b6
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":6,"Namespace":9}
+  - Name: Width
+    Id: g=1361080b30977c482ce06a8e682598f8
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=8f674de7c9721e66ba8751eccd1ea996
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: CurrentTabIndex
+    Id: g=a698a1075564d00d795f934773bbbbbc
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Class: Reference
+    Target: ns=9;i=1181
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=1183
+    Direction: Forward
+- File: PopupInfo/PopupInfo.yaml
+- Name: LineChart
+  Id: g=a34a0a4c7baefe3bfc952542662cfd05
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=e6c18ffe0e4c71319a52bb5f7b0d41c3
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=e25b099d9e7b5e80165e52f5e73d148c
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: HorizontalAlignment
+    Id: g=b5ea2b1a87f69108de0eeb784761a71e
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Id: g=0ba53eb146d1e800b2070087bdde38c3
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: WebBrowser1
+    Id: g=2eb0c73e155adfbf302c5f7847b02a4a
+    Type: ns=9;WebBrowser
+    Children:
+    - Name: URL
+      Id: g=a53e256daac6708999498b5cf5d12490
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=38;%PROJECTDIR%/eCharts/dynamic-data.html"
+    - Class: Reference
+      Target: ns=9;i=354
+      Direction: Forward
+    - Class: Reference
+      Target: ns=9;i=356
+      Direction: Forward
+    - Class: Reference
+      Target: ns=9;i=358
+      Direction: Forward
+    - Name: Width
+      Id: g=84cbb8fe2060b28cf4a5a51104deaa73
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Id: g=65ccb168a94c5622a2634034fd1dd13e
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Id: g=34f90bc595d826fe4fdcc5ab0feedb81
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=9704b9edb8d7412e13d7520c18281637
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+- Name: Barchart
+  Id: g=9dca01f6fbbc0e9468b825b0643efb9b
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=555112552135d9b0875e30e6d8dd902d
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=f780d01298ce7cf8fffa26f4eadea469
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: HorizontalAlignment
+    Id: g=917bf4e700718937b1e7610c98755fa1
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Id: g=d7ddffbb7210a6ceb1c202c2e13cf8b4
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: WebBrowser1
+    Id: g=60f155357c5638627abb822e79c5b6dc
+    Type: ns=9;WebBrowser
+    Children:
+    - Name: URL
+      Id: g=1695d45d1df6c91f1cc2413f36ccc80b
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=38;%PROJECTDIR%/eCharts/distribution-electricity.html"
+    - Class: Reference
+      Target: ns=9;i=354
+      Direction: Forward
+    - Class: Reference
+      Target: ns=9;i=356
+      Direction: Forward
+    - Class: Reference
+      Target: ns=9;i=358
+      Direction: Forward
+    - Name: Width
+      Id: g=b8830e097c0ed80c0179e6bb733be28b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Id: g=93afcff24b73b6117d7057639b8fb5e4
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Id: g=b965b5a025947ef0851da6c4b16bcbf2
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=e8c5d67ca982ca80764c6508bd36aafb
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+- Name: Heatmap
+  Id: g=47bf9b1f7aba91758f10ba9c5511edb6
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=6d0baedb639e6da8b1cb8b82b5d389d5
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=e9ce6a076b6ecf0add620ee61ecaaca3
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: HorizontalAlignment
+    Id: g=4baeafec0fd1dac97dc512297c2203e1
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Id: g=8d0d7d1c75c510ee7086ed1e8dab3ecd
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: WebBrowser1
+    Id: g=6d0277e8afee2a4551359d0971b2af63
+    Type: ns=9;WebBrowser
+    Children:
+    - Name: URL
+      Id: g=6e58f21005fec8bbd594637bcfc1ffdc
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=38;%PROJECTDIR%/eCharts/heat-map.html"
+    - Class: Reference
+      Target: ns=9;i=354
+      Direction: Forward
+    - Class: Reference
+      Target: ns=9;i=356
+      Direction: Forward
+    - Class: Reference
+      Target: ns=9;i=358
+      Direction: Forward
+    - Name: Width
+      Id: g=25e6de6e113b5f311cfd4f75030cfbf9
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Id: g=c4dbe8e1458cb4492053b3bd072d8ec6
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Id: g=0339261125a972dd63fec04e179f7fd5
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=65fd76949b67756dbc632f30b848e5bc
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+- Name: Radarchart
+  Id: g=0cec4cbd042ca9b83e1c1b7c126e9023
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=37ee99b5bf02b875a0aa8826f62caea2
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=2c0fa945ed4db3dc3abbfb9a21b5d5dd
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: HorizontalAlignment
+    Id: g=bbb1c52e824f55acc01d09e236dd6a32
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Id: g=b0bd1dbecba8d0fcf180acf49d89150b
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: WebBrowser1
+    Id: g=e089e036dd6af78c529a0534a26b7735
+    Type: ns=9;WebBrowser
+    Children:
+    - Name: URL
+      Id: g=1eddcfbef5c54e80167dcf363e186092
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=38;%PROJECTDIR%/eCharts/RadarChart.html"
+    - Class: Reference
+      Target: ns=9;i=354
+      Direction: Forward
+    - Class: Reference
+      Target: ns=9;i=356
+      Direction: Forward
+    - Class: Reference
+      Target: ns=9;i=358
+      Direction: Forward
+    - Name: Width
+      Id: g=ee86ba1774e708a5ceba21d605f0a188
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Id: g=7a22936819cfcacd8f87c1e29b36344a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Id: g=4bf18150e4073e059cbe3c30f94c02b2
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=fb2cdea1811915b8badb4e9d26f12869
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3

@@ -1,6 +1,6 @@
 Name: 'OPC-UA'
 Id: g=7b80bbd8e1bd1cd1de8a53b1c2a6df15
-Type: FolderType
+Type: OPCUACategoryFolder
 Children:
 - Name: 'OPC-UA Server'
   Id: g=6cad5a850b00354356b7d92655fca506

@@ -1,6 +1,6 @@
 Name: Retentivity
 Id: g=5f7a1338e568bec6eeab402071cde3be
-Type: FolderType
+Type: RetentivityCategoryFolder
 Children:
 - Name: Users
   Id: g=0d8c072dbe502e277743eeefb0ea5d68
@@ -38,6 +38,152 @@ Children:
     DataType: Boolean
     ReferenceType: HasProperty
     Value: true
+  - Name: ProjectLoadedEventHandler1
+    Id: g=c13f837c3a4e11de6cefe5d34ebd0acb
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Id: g=046714e4ccab1d322128972447084fec
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":18,"Namespace":11}
+    - Name: ListenObject
+      Id: g=e5fe128cde8f55598eb87bd2a3dcadad
+      Type: NodePointer
+      DataType: NodeId
+      ReferenceType: HasProperty
+      Value: {"IdType":2,"Id":"041c1711a07a755f308a453170e8034d","Namespace":38}
+      Children:
+      - Name: Kind
+        Id: g=9558c4d934033f8d4f6b6a0924af8d67
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":58}
+      - Name: NodeClass
+        Id: g=952243aeb087f3c54e37cb019d7d3c43
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 0
+    - Name: MethodsToCall
+      Id: g=e863836e217498ebaaec6feb73b69b43
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Id: g=4f5b6a75cd38da4ea98a2f734c66afcf
+        Type: BaseObjectType
+        Children:
+        - Name: ns=5;ObjectPointer
+          Id: g=1ad16f4cdbb09206663aeba83bf19b5b
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Id: g=52c3c8ff0b48fc4fdcefbfd516f21936
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":58}
+          - Name: DynamicLink
+            Id: g=57c46e66115d0d79d745e78011b9fc33
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Id: g=9043e7c0799f9cb929327329350633dc
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=5;Method
+          Id: g=5f8eba106e44239f57e840130a73abf8
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=ac0ffea9bb1b230ac5bc7e543168dae1
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=23343c2e347cf2e8f43c04d67dbf1f33
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":5,"TextId":"SetVariableToModifyDescription"}
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: Value
+            Id: g=c532bf77a4de7e417662e13a79d34d9e
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            Description: {"NamespaceIndex":5,"TextId":"SetValueDescription"}
+          - Name: ArrayIndex
+            Id: g=83836bc6b93b5563f5409c20c2f402d3
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":5,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+    - Name: EventArguments
+      Id: g=c9b034305022c8467f8a4ca14066e80d
+      Type: ProjectLoadedEvent
+      Children:
+      - Name: Project
+        Id: g=0d36d8c1450bb4905eb0fcbbb2dc3e7b
+        Type: BaseVariableType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: EventId
+        Id: g=092634ecbdd20c1288511fed7e1261d6
+        Type: PropertyType
+        DataType: ByteString
+        Value: ""
+      - Name: EventType
+        Id: g=f110c103b7cf299b87dc55e9e3e13c1d
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceNode
+        Id: g=34a6a0a7cf0545a780c0a869984bf4fb
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceName
+        Id: g=b11507b61a7e573e6442c07815151a6c
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: Time
+        Id: g=1b272e3305ad1e360e07368eab2f6b4c
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: ReceiveTime
+        Id: g=403d7428baf2e2494c8b8213da24981f
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LocalTime
+        Id: g=8f81b6749cd55e2836abfc760f91f6a9
+        Type: PropertyType
+        DataType: TimeZoneDataType
+        Value: 
+         {
+          "TypeId": {
+           "Id": 8912
+          },
+          "Body": {
+           "offset": 0,
+           "daylightSavingInOffset": false
+          }
+         }
+      - Name: Message
+        Id: g=5b88faae61c7df959bb715ad1093f7d0
+        Type: PropertyType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Severity
+        Id: g=66209b0b24aa4624e0b4b6744689ce59
+        Type: PropertyType
+        DataType: UInt16
+        Value: 0
 - Name: Dictionary
   Id: g=2bc6fd1ebd363e096fd8faa6dfe58949
   Type: RetentivityStorage

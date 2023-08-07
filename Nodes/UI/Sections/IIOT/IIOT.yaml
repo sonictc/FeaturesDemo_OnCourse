@@ -1,0 +1,362 @@
+Name: IIOT
+Id: g=78b8a9da55f63f7a46c33782329e35e4
+Type: FolderType
+Children:
+- Name: IIOTNavigationPanel
+  Id: g=cfb71963c82730371a23db3fd90221b5
+  Supertype: QNavigation
+  DisplayName: {"LocaleId":"en-US","Text":"Industrial Internet of Things Feature"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Panels
+    Id: g=f51a48f38e61b30bc5b1985687cefcfc
+    Type: BaseObjectType
+    Children:
+    - Name: Panel1
+      Id: g=4036376142f0e400880c20edf3df6443
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Id: g=452392c6e0c83dc3e041c4e2ed1234d2
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"REST API"}
+      - Name: Panel
+        Id: g=c0bacccc6d4b2f9ce550e1cb0bc3d38a
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"a6475b74d5ac202c6f5740b2162dd061","Namespace":38}
+        Children:
+        - Name: Kind
+          Id: g=e2e4e802ef6a69596c8b82cd1fab79fa
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":71,"Namespace":9}
+    - Name: Panel2
+      Id: g=7d130f78bbf29d1ade203fdc3a0c6d1f
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Id: g=4ecb3c3119929a0925b6c1d98f5f36e2
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Line Notify"}
+      - Name: Panel
+        Id: g=ee4dcfdf676d61629ff2d5511a583f3c
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"e81690d2060a5afe127d6171b22d45d2","Namespace":38}
+        Children:
+        - Name: Kind
+          Id: g=b0d8d9f580fd6f413040ac434c21a938
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":71,"Namespace":9}
+    - Name: Panel3
+      Id: g=72f1104bb1dd3345cf7465fa015cee26
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Id: g=9ca0f8aa4de4afe472fb53c33ac583a3
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"MQTT"}
+      - Name: Panel
+        Id: g=07cad38214687c8677c553f0351a7ff7
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"20f4fe9823c5ab3f00d355d2830e7918","Namespace":38}
+        Children:
+        - Name: Kind
+          Id: g=ffd75be603d30b9d7960527214fc9bf2
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":71,"Namespace":9}
+  - Name: CurrentPanel
+    Id: g=ae742d6591da144a1c7ac37a71bc996a
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=29b57f56959947c1b8d2cd6a624f1930
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":6,"Namespace":9}
+  - Name: Width
+    Id: g=bceb46e451a71e3f46f4bd95b68a4db5
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=67a2c64e56d4dcc526967da9156ec73b
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: CurrentTabIndex
+    Id: g=663415cd2f3a5b64fd3fc5ccf9317b86
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Class: Reference
+    Target: ns=9;i=1181
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=1183
+    Direction: Forward
+- File: PopupInfo/PopupInfo.yaml
+- Name: REST_API
+  Id: g=a6475b74d5ac202c6f5740b2162dd061
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=36601d3d0ae9a8c36ee978736f9a37d0
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=ec5c1dd6958a18c1e2bd839c8de3b3db
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: HorizontalAlignment
+    Id: g=5842b10386849feef811ebcaa957b55a
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Id: g=b8e591fa6128107fd26931e99eb7d0b7
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: RESTAPIPanelLoader
+    Id: g=a7178883549a78804b271e6df0ee31fd
+    Type: PanelLoader
+    Children:
+    - Name: Panel
+      Id: g=616a9adae4a7c7e8696835d1fe0bc785
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"eb83350ce8f5299c550b1f9938f0d7c2","Namespace":38}
+      Children:
+      - Name: Kind
+        Id: g=348b1fd3f0a3dc62e4958dd913183137
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":71,"Namespace":9}
+    - Name: CurrentPanel
+      Id: g=c34ca14c075fafa9690839ba6607943c
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=cff358edad6b467ea691d9464a2308cc
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":9}
+    - Class: Reference
+      Target: ns=9;i=478
+      Direction: Forward
+    - Name: Width
+      Id: g=75484f3cdad09e64bec599343c323839
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Id: g=12bf0d649c88cbbebb8eaa10a5011c68
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Id: g=f6d593554e223b6f79aa2054785332ee
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=2becb04b63ff118d95039423f67936d0
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+- Name: LineNotify
+  Id: g=e81690d2060a5afe127d6171b22d45d2
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=d43b7f8985ffcf9054412ffad74b889f
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=158262ee3067d9b8d98e479a08778105
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: HorizontalAlignment
+    Id: g=9d2c5967f69c2e35b69c3d8374077a09
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Id: g=b9731ac40cf6f9f3d1e1ec8cb9ca7f46
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: LineNotifyPanelLoader
+    Id: g=6035ba68c09cd25a8e1c5f7b63ca2564
+    Type: PanelLoader
+    Children:
+    - Name: Panel
+      Id: g=48785f212f2a9a1ddb1ca95cd7da46df
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"33379de2729594bf22a9660c3a4bbf1e","Namespace":38}
+      Children:
+      - Name: Kind
+        Id: g=9f6c2c91c89bd9d64d0b365756b01c13
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":71,"Namespace":9}
+    - Name: CurrentPanel
+      Id: g=4ec743bf3a6000b04ac14cab8034c854
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=56e7693acf5bd63c61703bb52f3ffb88
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":9}
+    - Class: Reference
+      Target: ns=9;i=478
+      Direction: Forward
+    - Name: Width
+      Id: g=e0a81880bb15910eb17f22d4e9d2e19a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Id: g=d88eeddcf58edf36e4d15410681d2d9a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: VerticalAlignment
+      Id: g=3d3d522b1870f0d94ea01bb6b0239bf2
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: HorizontalAlignment
+      Id: g=0f41364d795ead2a6040cd97e0ab2ff6
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+- Name: MQTT
+  Id: g=20f4fe9823c5ab3f00d355d2830e7918
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=ea37b884d98a2ced7c438881a309b503
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=8fc8957f2b27579f2c0a92f516eaf19e
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: HorizontalAlignment
+    Id: g=3db1e3a98b92ee9a685712be08eecd64
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Id: g=fe0ca36d272c91dcfc683f2b6236be10
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: MQTTPanelLoader
+    Id: g=29cfe6bee60459b2e0286864fab1289d
+    Type: PanelLoader
+    Children:
+    - Name: Panel
+      Id: g=85d5383d1a64ad889f92c139251c0307
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"592bcccfb585a3cc71cbd43961fb2faa","Namespace":38}
+      Children:
+      - Name: Kind
+        Id: g=fd811fc49a824c2e1d28ac6ab5442497
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":71,"Namespace":9}
+    - Name: CurrentPanel
+      Id: g=59788aa448e8214b267feaf0923a9273
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=0308c79d7332e54997e668afa093537f
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":9}
+    - Class: Reference
+      Target: ns=9;i=478
+      Direction: Forward
+    - Name: Width
+      Id: g=31e1a20bb171e0abea70b9037afab8c4
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Id: g=44ab740ed437a6071db9b460264fbcbe
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: VerticalAlignment
+      Id: g=84f770328395f4cec7aac76ed71f0250
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: HorizontalAlignment
+      Id: g=c6dd309d26c0cfa21ed4058cc935122c
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+- File: MQTTPanel/MQTTPanel.yaml
+- File: LineNotifyPanel/LineNotifyPanel.yaml
+- File: RESTAPIPanel/RESTAPIPanel.yaml

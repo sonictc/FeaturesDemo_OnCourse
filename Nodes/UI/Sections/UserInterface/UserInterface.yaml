@@ -216,6 +216,17 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 870.0
+  - Name: CurrentTabIndex
+    Id: g=45e705b5fdd501f08f04dcc42fab44a6
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Class: Reference
+    Target: ns=9;i=1181
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=1183
+    Direction: Forward
 - Name: Style
   Id: g=9d1f1b9715e2108ad6d3f05b54264e58
   Supertype: QPage
@@ -20235,6 +20246,22 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 2
+  - Name: MoveTarget
+    Id: g=02b439c8a2edddc3fc09dc521a72c1aa
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=b3660fda9d2ac4e932371557b1fb2682
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":71,"Namespace":9}
+    - Name: DynamicLink
+      Id: g=1d98802546fbe86249f7f100d6f4c470
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: HorizontalLine
   Id: g=a5a2e37da23a5eddcee092357c9c11b8
   Supertype: Rectangle
@@ -20635,42 +20662,6 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../StartAnimation"
-        - Name: Number(WAIT)2500ms
-          Id: g=074075b883ff1bf9846090de83f58977
-          Type: NumberAnimation
-          Children:
-          - Name: To
-            Id: g=f962166ffcacad0917cf8f68a05f1d67
-            Type: BaseDataVariableType
-            DataType: Float
-            Value: 0.0
-          - Name: Target
-            Id: g=5910af0dda6d11edeeb43b491f84600d
-            Type: NodePointer
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-            Children:
-            - Name: Kind
-              Id: g=7756b6aa38b586743a4959793919ba3b
-              Type: PropertyType
-              DataType: NodeId
-              Value: {"Id":62}
-            - Name: DynamicLink
-              Id: g=d827212cde85ab2450779c36e990dae6
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../Rotation@NodeId"
-          - Name: Running
-            Id: g=ad91e171b15f32137fcf7bc5bb6bf622
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Duration
-            Id: g=f7b39c689b20edd68eed774675663510
-            Type: BaseDataVariableType
-            DataType: Int32
-            ModellingRule: Optional
-            Value: 2500
         - Name: Number(DOWN)1000ms
           Id: g=f4ccd4e255c3c127cdca6a899bb6fbbd
           Type: NumberAnimation
@@ -21121,6 +21112,42 @@ Children:
           DataType: Int32
           ModellingRule: Optional
           Value: -1
+        - Name: Number(WAIT)2500ms
+          Id: g=074075b883ff1bf9846090de83f58977
+          Type: NumberAnimation
+          Children:
+          - Name: To
+            Id: g=f962166ffcacad0917cf8f68a05f1d67
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 0.0
+          - Name: Target
+            Id: g=5910af0dda6d11edeeb43b491f84600d
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=7756b6aa38b586743a4959793919ba3b
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":62}
+            - Name: DynamicLink
+              Id: g=d827212cde85ab2450779c36e990dae6
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Rotation@NodeId"
+          - Name: Running
+            Id: g=ad91e171b15f32137fcf7bc5bb6bf622
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Duration
+            Id: g=f7b39c689b20edd68eed774675663510
+            Type: BaseDataVariableType
+            DataType: Int32
+            ModellingRule: Optional
+            Value: 2500
     - Name: RobotPicker2
       Id: g=f4b6513ea4d7343ad863b1d2ab66d867
       Type: Image

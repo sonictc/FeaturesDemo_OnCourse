@@ -22,31 +22,6 @@ Children:
   Type: BaseDataVariableType
   DataType: Duration
   Value: "0:00:00:0.0000000"
-- Name: PlcVersion
-  Id: g=731ef4cd61b65c18ff5cd36b51d08c9e
-  Type: BaseDataVariableType
-  DataType: CODESYSPlcVersion
-  Value: 1
-- Name: Endianness
-  Id: g=f07daf908980f525db809e252ac48bf2
-  Type: BaseDataVariableType
-  DataType: Endianness
-  Value: 0
-- Name: LoginToPlc
-  Id: g=c86399e4e233abea80f0d7697390fdaa
-  Type: BaseDataVariableType
-  DataType: Boolean
-  Value: false
-- Name: Protocol
-  Id: g=6ad09f0867fb46b96f919af7bf80873f
-  Type: BaseDataVariableType
-  DataType: CODESYSProtocol
-  Value: 0
-- Name: CommunicationBufferSize
-  Id: g=339e21b7e28d3aab4e2ceffbcd0de024
-  Type: BaseDataVariableType
-  DataType: UInt32
-  Value: 0
 - Name: OperationCode
   Id: g=b422bd2c89b98f6690f6569ca50f9b20
   Type: BaseDataVariableType
@@ -74,4 +49,7 @@ Children:
 - File: Tags/Tags.yaml
 - Name: Types
   Id: g=f3fc0193d258a8c628bc45df2364540b
-  Type: BaseObjectType
+  Type: FolderType
+  Children:
+  - File: DataTypes/DataTypes.yaml
+  - File: VariableTypes/VariableTypes.yaml

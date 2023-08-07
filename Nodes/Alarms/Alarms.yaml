@@ -1,6 +1,6 @@
 Name: Alarms
 Id: g=7c879e97172984569c9458faf5b6b22e
-Type: FolderType
+Type: AlarmsCategoryFolder
 Children:
 - Name: VoltageAnomaly
   Id: g=ee76bb25eafd71fa67dfce8137da420b
@@ -306,3 +306,4 @@ Children:
 - File: AlarmsWithEmailNotification/AlarmsWithEmailNotification.yaml
 - File: MachineToMachine/MachineToMachine.yaml
 - File: RuntimeAlarms/RuntimeAlarms.yaml
+- File: LineNotification/LineNotification.yaml

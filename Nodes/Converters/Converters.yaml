@@ -1,6 +1,6 @@
 Name: Converters
 Id: g=73cce9393156a9afcacbfa49b578c683
-Type: FolderType
+Type: ConvertersCategoryFolder
 Children:
 - Name: ExpressionEvaluatorMax
   Id: g=45e86c93089424b32050c85723a84f87

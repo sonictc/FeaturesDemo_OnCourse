@@ -1,22 +1,7 @@
 Name: FeaturesDemo_OnCourse
+Id: g=041c1711a07a755f308a453170e8034d
 Type: ProjectFolder
 Children:
-- Name: BranchingEnabled
-  Type: BaseDataVariableType
-  DataType: Boolean
-  Value: false
-- Name: Locales
-  Type: BaseDataVariableType
-  DataType: String
-  ValueRank: OneDimension
-  ArrayDimensions: [0]
-  Value: ["en-US","it-IT","zh-CN"]
-- Name: LocaleFallbackList
-  Type: BaseDataVariableType
-  DataType: String
-  ValueRank: OneDimension
-  ArrayDimensions: [0]
-  Value: ["en-US"]
 - File: UI/UI.yaml
 - File: Model/Model.yaml
 - File: Converters/Converters.yaml
@@ -70,3 +55,30 @@ Children:
     Type: PropertyType
     DataType: Byte
     Value: 0
+- Name: Authentication
+  Type: PropertyGroup
+- Name: AlarmConfiguration
+  Type: PropertyGroup
+  Children:
+  - Name: BranchingEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: false
+- Name: Localization
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US","it-IT","zh-CN"]
+  - Name: LocaleFallbackList
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]

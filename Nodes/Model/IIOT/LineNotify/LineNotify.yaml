@@ -1,0 +1,19 @@
+Name: LineNotify
+Id: g=bdd95d5365630410d38a909984981752
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=496d0f8ce9f93835a662b99840bec127
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Id: g=fed0d8ae88f760b3cacc167b7253f1c5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=67a52fd5e443fca8a179d276439b87da
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

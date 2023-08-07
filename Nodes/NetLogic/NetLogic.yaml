@@ -1,6 +1,6 @@
 Name: NetLogic
 Id: g=0c58c11a5c3ebc6532ea8bf6286ccc12
-Type: FolderType
+Type: NetLogicCategoryFolder
 Children:
 - Name: EmailSenderLogic
   Id: g=332f12f4f3b7495aca8d48232f5dcc11
@@ -205,3 +205,430 @@ Children:
 - Name: ProjectLoadedLogLogic
   Id: g=9bf828c99d67b936e1fbcfe5059aec21
   Type: NetLogic
+- Name: MQTTLogic
+  Id: g=3a4db6ec94182da275677e04f51538d9
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: StartListeningToVariables
+    Id: g=e0e5a4ffefe70c97f4cb769bfb1e9627
+  - Name: MqttServer
+    Id: g=07819d81a22d4aefc0628d35c5c6de87
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: IPAddress
+      Id: g=e4b3f852d5da739b5b84e0900aa1c3b0
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Port
+      Id: g=d9c1dcea2504e3fde8c758b345944af3
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 0
+    - Name: UseSSL
+      Id: g=88b70fc9623f53681f9c725815918116
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: Certificate
+        Id: g=c700fba956c2f0eba812d8b2873ced69
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: ""
+      - Name: CertificatePassword
+        Id: g=cd129d60f345a6bf43a420cd388db1ed
+        Type: BaseDataVariableType
+        DataType: Password
+        Value: ""
+    - Name: AutoStart
+      Id: g=b1e0e807189990fd60e72578625e87a9
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: UserAuthentication
+      Id: g=2884730083a5f09fb0d5afd35724bef1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: AuthorizedUsers
+        Id: g=48dc8d448ca1157b4be5a7c751447bf9
+        Type: BaseDataVariableType
+        DataType: String
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: []
+    - Name: IsRunning
+      Id: g=9e89b11c45d35bf9d1509816d6fe03b5
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: IsDebuggingMode
+      Id: g=882524023b7456cd37fae215e9f9ad52
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: MaxNumberOfConnections
+      Id: g=bae8b3f7b53b6bac8e4ce9820a2ee27c
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: NumberOfConnections
+      Id: g=0a2d9abd6210a718c023060a028dff74
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Name: MqttClient
+    Id: g=19b76fb1518ef83e45cd63ca817a8012
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: IPAddress
+      Id: g=2e926d6016f32d54f92247897e0da22c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "broker.hivemq.com"
+    - Name: Port
+      Id: g=da90e41d6c72892d110d9f0b1b998409
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 1883
+    - Name: UseSSL
+      Id: g=c7373fef023c91d7e93227c90bbf9969
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: CaCertificate
+        Id: g=7633a79e05c9fa2102390350635ba600
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: ""
+      - Name: ClientCertificate
+        Id: g=d6460fcc516011d7a1cd5a7d0d7087dd
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: ""
+      - Name: ClientCertificatePassword
+        Id: g=ce58bab997e02a87fdd9a17097d2a45d
+        Type: BaseDataVariableType
+        DataType: Password
+        Value: ""
+      - Name: AllowUntrustedCertificates
+        Id: g=0b448c8e7bdae7b092a19043ad91eb50
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+    - Name: UserAuthentication
+      Id: g=77c7b1bf47a335b2e6f487e1cb2df56f
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: AuthorizedUsers
+        Id: g=3c1d627c10ca33e33150a607c1edb903
+        Type: BaseDataVariableType
+        DataType: String
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: []
+    - Name: IsRunning
+      Id: g=143e15066cabdc1e2cc12887f97c263b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: IsDebuggingMode
+      Id: g=1f2de7ae2c2d10fcfee875975fd78197
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: ClientId
+      Id: g=6ae9989e277bea45fbeb1d4c155d5008
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Connected
+      Id: g=628c0107728614c39f2d56c9f51d2bc7
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: SentPackages
+      Id: g=b4fb5b826d0500dae8c16d8381c0257f
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: ReceivedPackages
+      Id: g=28b0485e9ce27485505d5e3d8254acfc
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Method
+    Name: StartMQTTServer
+    Id: g=87de8ff95fba94b5c972fd0d8c010cb3
+  - Name: Subscriber
+    Id: g=bf6fa029e47b291c87de471c6301ced0
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: LiveTags
+      Id: g=161587007e31384ff99cbff20133874d
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: LiveTagsFolder
+        Id: g=51e718ebd1edf5ba63addf5bdf550220
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Id: g=26b8e7d9b4ad3cbecc8a846a91ed53b4
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NodeClass
+          Id: g=df399b16a6a9da78d0b38574cc5902d5
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+          Value: 0
+      - Name: LiveTagsTopic
+        Id: g=e101b09bc3a0a1cea85506d7880984b1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: LastPackageTimestamp
+        Id: g=4000c45a19272f77169b8946e5a99977
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Value: "1601-01-01T00:00:00.0000000"
+    - Name: StoreTables
+      Id: g=a012cedded119054da5ae51cb59e6f44
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: Store
+        Id: g=869ec59085967409bfc531f6e0704c45
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Id: g=072c2de1e334f4bd1b6cf1176d32ad5d
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":1,"Namespace":29}
+      - Name: StoreTablesTopic
+        Id: g=b0296efe348065597c19a3b8262257f9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+    - Name: CustomPayload
+      Id: g=cf06a9caded7e76e77073aff052599e7
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: CustomPayloadMessage
+        Id: g=9da6431a86334b794fd5220d0530a192
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: CustomPayloadTopic
+        Id: g=10b090aca8b5bbb6cd4887e861bb7189
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+  - Name: Publisher
+    Id: g=74e687797b1e23aa25c1fe9c74bcf914
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: LiveTags
+      Id: g=773ce195abd0cce983b5932b03805f3b
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: LiveTagsPeriod
+        Id: g=5a745e07fb8b3f778cfc5750abb7901e
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:1.0000000"
+      - Name: LiveTagsFolder
+        Id: g=e2054610bd0ac714ecfb5fe3cd2ee9e0
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"a8460345da0f75259ae91843f91f9551","Namespace":38}
+        Children:
+        - Name: Kind
+          Id: g=8ec2ab2a2ca339c801bbfd340aae3876
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NodeClass
+          Id: g=9bb41ae546f35ddaaec2a32a011963f1
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+          Value: 0
+      - Name: LiveTagsTopic
+        Id: g=24924516e0676fec0325b316ebe8d87c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "sonic/optix/live"
+      - Name: QoS
+        Id: g=fd4ac5d7679afcd624fd4bffd2ebba91
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Retain
+        Id: g=2ebe5870b01b365574605fe602a9cabe
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+    - Name: StoreTables
+      Id: g=bb8e88e6b220d8fe571a4bf01e08df26
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: Store
+        Id: g=89ef05de581d564511550ee052faeb24
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Id: g=645a91de577d4fdd10d2de7afcaabe42
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":1,"Namespace":29}
+      - Name: TableNames
+        Id: g=4d6a6e240e6d88d11cbd078ad920c996
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+        Children:
+        - Name: Table1
+          Id: g=12e5ea56f3a83fbef07f9cffd9a32de1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: Table2
+          Id: g=237c87be0a0191889a94ed38b98b4c83
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: PreserveData
+        Id: g=5ae72bf15cb7370db1fd88689250615b
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: MaximumItemsPerPacket
+        Id: g=f01f66feb873e11a65730adc18252605
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: MaximumPublishTime
+        Id: g=7328dc3ac59f4b0bb7f1d249033b4585
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:0.0000000"
+      - Name: MinimumPublishTime
+        Id: g=e19efa08fc0ae157b4e468f5de949845
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:0.0000000"
+      - Name: StoreTablesTopic
+        Id: g=a6f5a149f969d89e520267a59ea82b75
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: QoS
+        Id: g=c7718bab649d9bdc4e0bde63cb42a93d
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Retain
+        Id: g=6350bc5e5f2dd191f11f9b40850cb1bf
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: TablesPrefix
+        Id: g=bdf6ec14fc26aa89996f982072fc1bd8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: AllRows
+        Id: g=3081f9ec6ae97654544c7044a3a36019
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+    - Name: CustomPayload
+      Id: g=91e429884d1273fcffa3697c3c482bc6
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: CustomPayloadMessage
+        Id: g=5f1b323b509bbba2cde6f0a6df18ce39
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: CustomPayloadTopic
+        Id: g=64d0009fd47edef8ae79016eaf9661e0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: CustomPayloadPeriod
+        Id: g=08495205791911f467ffc95eb45f1f5e
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:0.0000000"
+      - Name: QoS
+        Id: g=e943470e5dd43e0de4628e3df6ec3946
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Retain
+        Id: g=2c52b4ad2509e33b076d86e1623da19f
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+  - Class: Method
+    Name: FetchData
+    Id: g=e863356311beb383b7c0e4f26944b53d
+  - Class: Method
+    Name: StartCustomPayload
+    Id: g=925b836546e478f9749d19b4b06486c0
+- Name: LineNotification
+  Id: g=02f38379a460b1d755e2c5e5e7d6a480
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: SendLineNotify
+    Id: g=1b87d7bd950fa7308493c90c8e93e94c
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=1f72596956badc308b7db89dd7bf88b8
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"alarmActive","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"allowSendingAlertMsg","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"alertMessage","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"allowSendingClearMsg","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"clearMessage","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"useAlertSticker","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"alertStickerPackageId","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"alertStickerId","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"useClearSticker","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"clearStickerPackageId","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"clearStickerId","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: LineAccessToken
+    Id: g=9c1d14daf344821f7819d7fddc39e1f7
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "bXVKuoork7L8GkOsykDt6J5VkUSXic7mCNfscbSi7d3"

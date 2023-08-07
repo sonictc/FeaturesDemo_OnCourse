@@ -216,6 +216,17 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
+  - Name: CurrentTabIndex
+    Id: g=7531aafff202400f356c14b43a2ada2e
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Class: Reference
+    Target: ns=9;i=1181
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=1183
+    Direction: Forward
 - Name: DataLoggerPage
   Id: g=73452dc8ce130d3b6e517173d0539722
   Supertype: QPage

@@ -136,6 +136,17 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 780.0
+  - Name: CurrentTabIndex
+    Id: g=8f9454b92637778ba88d9075ed38f11b
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Class: Reference
+    Target: ns=9;i=1181
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=1183
+    Direction: Forward
 - Name: MasterDetail
   Id: g=fd6edb12506425d1fbe27cfa0f178b4d
   Supertype: QPage

@@ -1,0 +1,19 @@
+Name: MQTT
+Id: g=7a49f30e13f515d66fe54d57d266db2e
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=2a42683671f673fc42c39f9c881b43c3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Id: g=fd558c6da08e796f908afc096ca99efb
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=cfcfc740d22a265fb963973669dc936f
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

@@ -1,6 +1,6 @@
 Name: Translations
 Id: g=3d4c8096f66f8e5b574b25c4dd9fe621
-Type: FolderType
+Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
   Id: g=bb3c6cf9228e7a16e6800e07fe221fc6

@@ -10,3 +10,5 @@ Children:
 - File: Process/Process.yaml
 - File: PrototypesInstances/PrototypesInstances.yaml
 - File: Retentivity/Retentivity.yaml
+- File: IIOT/IIOT.yaml
+- File: ECharts/ECharts.yaml
