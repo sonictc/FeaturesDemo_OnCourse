@@ -422,13 +422,13 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 24.0
+      Value: 36.0
     - Name: TopMargin
       Id: g=3890e98eed3981d8bcae0e8f41273a33
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 81.0
+      Value: 80.0
   - Name: GETButton
     Id: g=1a65c0040e78d690e273075890422366
     Type: Button
@@ -900,13 +900,13 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 300.0
+    Value: 1920.0
   - Name: Height
     Id: g=7bcbff38c16fa102774a30814656a02b
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 300.0
+    Value: 1080.0
   - Name: HorizontalAlignment
     Id: g=5ec6aad9b9e36b16bb98ef0970f57b77
     Type: BaseVariableType
@@ -1070,3 +1070,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
+  - Name: Label1
+    Id: g=2d65ebaa43b2ad9dde907195493d8bdf
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=74e2169b4a99698857bb3e0cb6f160e1
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"https://jsonplaceholder.typicode.com/posts"}
+    - Name: LeftMargin
+      Id: g=1e4bf6130099de6c9d0652173234b5ad
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Id: g=3b99d29a4aacee90d5388e419f1f4d2a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: HorizontalAlignment
+      Id: g=6b1f8f42bb1faee5e4a9f686e55d4346
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=d5892059c8fe08285ce50fd72f46201c
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0

@@ -463,12 +463,12 @@ Children:
         Id: g=5a745e07fb8b3f778cfc5750abb7901e
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:1.0000000"
+        Value: "0:00:00:0.0000000"
       - Name: LiveTagsFolder
         Id: g=e2054610bd0ac714ecfb5fe3cd2ee9e0
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"a8460345da0f75259ae91843f91f9551","Namespace":38}
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
         Children:
         - Name: Kind
           Id: g=8ec2ab2a2ca339c801bbfd340aae3876
@@ -484,7 +484,7 @@ Children:
         Id: g=24924516e0676fec0325b316ebe8d87c
         Type: BaseDataVariableType
         DataType: String
-        Value: "sonic/optix/live"
+        Value: "sonic/optix/Jirawuth"
       - Name: QoS
         Id: g=fd4ac5d7679afcd624fd4bffd2ebba91
         Type: BaseDataVariableType

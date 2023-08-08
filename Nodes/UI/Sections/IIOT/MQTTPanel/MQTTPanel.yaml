@@ -653,13 +653,25 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 293.0
+      Value: -268.0
     - Name: TopMargin
       Id: g=7cc83ddaf3db99fed3f2f40cf3204805
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 130.0
+      Value: 131.0
+    - Name: HorizontalAlignment
+      Id: g=f3421700f62f7429f605c4013d2f4704
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Id: g=bd0d32f095caf440c2164eabc842b587
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
   - Name: LabelVariable2
     Id: g=047afb9f95878ffd0a8a6c80e2ff98e4
     Type: Label
@@ -675,13 +687,25 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 293.0
+      Value: -268.0
     - Name: TopMargin
       Id: g=6048efd07a83f8b8d9853e57b6e0e4e5
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 246.0
+      Value: 251.0
+    - Name: HorizontalAlignment
+      Id: g=fcc40c235747d62fe5239396ec78345d
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Id: g=8ddd5e3870a56f94d2915f36cdf27622
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
   - Name: LabelVariable3
     Id: g=5a726711207fced0c877eed62c97c10a
     Type: Label
@@ -697,10 +721,22 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 296.0
+      Value: -268.0
     - Name: TopMargin
       Id: g=cc87d838cea5338d33bea9338347e5b9
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 362.0
+      Value: 361.0
+    - Name: HorizontalAlignment
+      Id: g=3d38dafb079d71bff8e0454164d18ced
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Id: g=53b11ff4622145983bc5712977fae6c1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
