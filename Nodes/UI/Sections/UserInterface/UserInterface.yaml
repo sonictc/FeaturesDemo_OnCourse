@@ -20601,553 +20601,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 590.0
-    - Name: RobotPicker1
-      Id: g=578efabeffa43869b90d755ea2e38dfa
-      Type: Image
-      Children:
-      - Name: Path
-        Id: g=f77f90f0952756a2280f36420f0f4e81
-        Type: BaseDataVariableType
-        DataType: ResourceUri
-        Value: "ns=38;%PROJECTDIR%/AnimationGraphics/Picker1.svg"
-      - Name: Width
-        Id: g=21bd2afb224f45f86d556d3cde8ce4ff
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 70.0
-      - Name: Height
-        Id: g=c83712451df844caa63fbcedeee27589
-        Type: BaseVariableType
-        DataType: Size
-        Value: 280.0
-      - Name: LeftMargin
-        Id: g=2dcee9efc242d3ba3ab94eedb269aea1
-        Type: BaseVariableType
-        DataType: Size
-        Value: 920.0
-      - Name: TopMargin
-        Id: g=6ad8bf28adfcb8025d1e72672aee13b7
-        Type: BaseVariableType
-        DataType: Size
-        Value: -150.0
-      - Name: FillMode
-        Id: g=3fb935ef0676fa591eb38f8dd6700a63
-        Type: BaseDataVariableType
-        DataType: FillModeEnum
-        ModellingRule: Optional
-        Value: 0
-      - Name: Opacity
-        Id: g=51ec6785d3d54bedc28f3aad810c7fb7
-        Type: BaseVariableType
-        DataType: Float
-        Value: 100.0
-      - Name: Rotation
-        Id: g=b6b615008ff6f76183e83f77b09b1f81
-        Type: BaseVariableType
-        DataType: Size
-        Value: 0.0
-      - Name: Conveyor1ToConveyor2_11200ms
-        Id: g=4f03c35d755b5e5ff9e674104773cf7e
-        Type: SequentialAnimation
-        Children:
-        - Name: Running
-          Id: g=aa173faabb1d116d584facb535a210ae
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Id: g=6b1d487918f73d26771587d09f9b940f
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../StartAnimation"
-        - Name: Number(DOWN)1000ms
-          Id: g=f4ccd4e255c3c127cdca6a899bb6fbbd
-          Type: NumberAnimation
-          Children:
-          - Name: To
-            Id: g=109a9a5cca612243fcd3e26f386ba3e0
-            Type: BaseDataVariableType
-            DataType: Float
-            Value: -10.0
-          - Name: Target
-            Id: g=610fc468ee0f0ceb6013f8ee5e40948e
-            Type: NodePointer
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-            Children:
-            - Name: Kind
-              Id: g=7cc9436320c12af3e09f1bed208a2a81
-              Type: PropertyType
-              DataType: NodeId
-              Value: {"Id":62}
-            - Name: DynamicLink
-              Id: g=ef0a5ca57fa5174f470ea5a59f0f989d
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../TopMargin@NodeId"
-          - Name: Running
-            Id: g=6984a86784fa092019e07884501e03cf
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Duration
-            Id: g=1e424ddeab625874237e3ae210dc82a2
-            Type: BaseDataVariableType
-            DataType: Int32
-            ModellingRule: Optional
-            Value: 1000
-          - Name: From
-            Id: g=87bc65b18265db5848e29169d2e9d17a
-            Type: BaseDataVariableType
-            DataType: Float
-            ModellingRule: Optional
-            Value: -150.0
-        - Name: Number(UP)1600ms
-          Id: g=afc947c227bbe348b18282e4595f5e30
-          Type: NumberAnimation
-          Children:
-          - Name: To
-            Id: g=6f876a9949ac550e45031b28bf076c4f
-            Type: BaseDataVariableType
-            DataType: Float
-            Value: -150.0
-          - Name: Target
-            Id: g=f9471293000fc63c4d10d0c8c4d8e38d
-            Type: NodePointer
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-            Children:
-            - Name: Kind
-              Id: g=4fea41200564a773dc601c141139fc38
-              Type: PropertyType
-              DataType: NodeId
-              Value: {"Id":62}
-            - Name: DynamicLink
-              Id: g=d39caacdca03b01860efd6624bcbe827
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../TopMargin@NodeId"
-          - Name: Running
-            Id: g=76518041f3a34c2e1bc3f2773c6aef84
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: From
-            Id: g=5e8abf886fba611163a305eed5d6a2c9
-            Type: BaseDataVariableType
-            DataType: Float
-            ModellingRule: Optional
-            Value: -10.0
-          - Name: Duration
-            Id: g=0d34d2fa56c7336dc92e231a165db4e5
-            Type: BaseDataVariableType
-            DataType: Int32
-            ModellingRule: Optional
-            Value: 1600
-          - Name: EasingCurve
-            Id: g=b2c1a7b479ae60c11a501fc493d754c6
-            Type: BaseDataVariableType
-            DataType: EasingCurveEnum
-            ModellingRule: Optional
-            Value: 0
-        - Name: Parallel(POS1)2600ms
-          Id: g=2fd1442ae7461724a989027c0d446fa5
-          Type: ParallelAnimation
-          Children:
-          - Name: Running
-            Id: g=0f1acac8a5b4d1ba53b8c19a6e7ca59c
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Number(LEFT)2000ms
-            Id: g=b2aa1bed92f7d72efc4f97f9671db9d9
-            Type: NumberAnimation
-            Children:
-            - Name: To
-              Id: g=856c6036b0c2e35806080665b6ec59b7
-              Type: BaseDataVariableType
-              DataType: Float
-              Value: 495.0
-            - Name: Target
-              Id: g=4bf05730212f87d573701c436af92d88
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Id: g=5a3ef7681e6eca79bdff35558226a5c1
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":62}
-              - Name: DynamicLink
-                Id: g=3c38ba0e2d4261be35d4c879d71ad291
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../LeftMargin@NodeId"
-            - Name: Running
-              Id: g=1877b2c097c3aa6dbdbaa076be05c5e7
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: From
-              Id: g=44af0c9f76821ecfb0407748b3db27d3
-              Type: BaseDataVariableType
-              DataType: Float
-              ModellingRule: Optional
-              Value: 920.0
-            - Name: Duration
-              Id: g=3e5cda138161d3937ae295ec47baf8fe
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 2000
-          - Name: Number(SIZE)2100ms
-            Id: g=3a8bd4f1d3f9ad8a86254c8bd7db3687
-            Type: NumberAnimation
-            Children:
-            - Name: To
-              Id: g=c5d6ddc1ac7671ecadbcb67b7e5a5722
-              Type: BaseDataVariableType
-              DataType: Float
-              Value: 137.0
-            - Name: Target
-              Id: g=e805f1edd67c0afd403ebfb19a320feb
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Id: g=801220709ade72556924fb0688f5a791
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":62}
-              - Name: DynamicLink
-                Id: g=a354c00b046466bb751a25257e76ea85
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../Height@NodeId"
-            - Name: Running
-              Id: g=2007bf8dd5f57eac16c7723c645519fc
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: From
-              Id: g=9705c81012dcafaf7b2013f7d1db1dab
-              Type: BaseDataVariableType
-              DataType: Float
-              ModellingRule: Optional
-              Value: 280.0
-            - Name: Duration
-              Id: g=06dd1dd77e8cffe2f1062ebf4ecfb480
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 2100
-          - Name: Number(DOWN)2600ms
-            Id: g=27e84e4e869091487499c1e6f2da0189
-            Type: NumberAnimation
-            Children:
-            - Name: To
-              Id: g=5d3cfe96be36f0b4acb060a9500ce091
-              Type: BaseDataVariableType
-              DataType: Float
-              Value: -5.0
-            - Name: Target
-              Id: g=65e7c4764c6f190570266b554f7666d1
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Id: g=4b22bdc349aec604d2691ccb096743d3
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":62}
-              - Name: DynamicLink
-                Id: g=0ffc473391874e0c7b38e31f9d38eb9e
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../TopMargin@NodeId"
-            - Name: Running
-              Id: g=cc30bfd034ab2ff58ac96672db09847e
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: From
-              Id: g=9b61425e0ed4eb16f6166b025f29ef88
-              Type: BaseDataVariableType
-              DataType: Float
-              ModellingRule: Optional
-              Value: -150.0
-            - Name: Duration
-              Id: g=2b36984a44f624f6c9e23c0d9251e616
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 2600
-          - Name: Number(FADE)1800ms
-            Id: g=18b669bc8ca9fcaa85d0976c1252d0cf
-            Type: NumberAnimation
-            Children:
-            - Name: To
-              Id: g=b5f88c3f60ac183ae09f9a8b346a11c7
-              Type: BaseDataVariableType
-              DataType: Float
-              Value: 60.0
-            - Name: Target
-              Id: g=ad595ace0d62ea844172d03b998ad81c
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Id: g=dd26683c68c4eb9046eca1ff9e8572c2
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":62}
-              - Name: DynamicLink
-                Id: g=1ee38de6ec304145906843a26f89067f
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../Opacity@NodeId"
-            - Name: Running
-              Id: g=65f3c98cdd57adf3380e62bc9068ac00
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: From
-              Id: g=9a21f6269d349b9e82744f17c820ab73
-              Type: BaseDataVariableType
-              DataType: Float
-              ModellingRule: Optional
-              Value: 100.0
-            - Name: Duration
-              Id: g=5fc0a0696a1b4067c3c0b2834a96373b
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 1800
-        - Name: Parallel(POS0)3500ms
-          Id: g=da7a1a4e8e0ce51635ae0b22165185b9
-          Type: ParallelAnimation
-          Children:
-          - Name: Running
-            Id: g=d8df7ccab089cc71e0c0e3bbbb7efe6c
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Number(FADE)3500ms
-            Id: g=aee0a6ec9d9404be66e6245687bd0676
-            Type: NumberAnimation
-            Children:
-            - Name: To
-              Id: g=65001033f27a493b7dab4ff33469124c
-              Type: BaseDataVariableType
-              DataType: Float
-              Value: 100.0
-            - Name: Target
-              Id: g=ff607c8570870a35ac69595dda60aa1e
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Id: g=9b70bb3fe03827f39017f3f8e333c1ba
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":62}
-              - Name: DynamicLink
-                Id: g=a562f878ffcb5071854b97815b41e323
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../Opacity@NodeId"
-            - Name: Running
-              Id: g=512b1a2c80e8c45881f642093ebca411
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: From
-              Id: g=741f195ff1ffeee0a9d827f83f21d467
-              Type: BaseDataVariableType
-              DataType: Float
-              ModellingRule: Optional
-              Value: 60.0
-            - Name: Duration
-              Id: g=a82d5540d3a988ad032bfaffcd8d63a4
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 3500
-          - Name: Number(UP)2550ms
-            Id: g=fb290a7fe8ebcabe09507c48bbc103ee
-            Type: NumberAnimation
-            Children:
-            - Name: To
-              Id: g=c1fa3fd2ce49d389841ffa3573e0a4aa
-              Type: BaseDataVariableType
-              DataType: Float
-              Value: -150.0
-            - Name: Target
-              Id: g=5c723c6dcbf9b6b7db85da45cd8f3887
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Id: g=2268babdc0d1ae6fd132b78f5ae9b1a9
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":62}
-              - Name: DynamicLink
-                Id: g=9d2039f59ff448c6f7e7d117d871e63d
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../TopMargin@NodeId"
-            - Name: Running
-              Id: g=b72c3c6ba96aad8a867a4d0943b7a055
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: From
-              Id: g=f4152c9d21da8d0b494f8f42bc48439f
-              Type: BaseDataVariableType
-              DataType: Float
-              ModellingRule: Optional
-              Value: -5.0
-            - Name: Duration
-              Id: g=1476a9afa7d856217f96605ffffea77e
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 2550
-          - Name: Number(SIZE)3500ms
-            Id: g=054223eefcb675dfc8b5fb615d0bf35b
-            Type: NumberAnimation
-            Children:
-            - Name: To
-              Id: g=46060de12a4d61d88d024d318a138fe5
-              Type: BaseDataVariableType
-              DataType: Float
-              Value: 280.0
-            - Name: Target
-              Id: g=d6132bfcf7f8ac1bef3f2617d7a3b64d
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Id: g=07c6a001e205b41c2db241f44a854824
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":62}
-              - Name: DynamicLink
-                Id: g=5a220e6e9c34d3e4bca60be3932a10ed
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../Height@NodeId"
-            - Name: Running
-              Id: g=2fdc7530c4fd47cf19e69417076a72ef
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: From
-              Id: g=aa705d8f90de4641b59fbc913d81228c
-              Type: BaseDataVariableType
-              DataType: Float
-              ModellingRule: Optional
-              Value: 137.0
-            - Name: Duration
-              Id: g=977b4517ce1e37ff4b5901ebf317b8a3
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 3500
-          - Name: Number(RIGHT)3500ms
-            Id: g=facd2ce175f3a9bce58f3871188dd4e5
-            Type: NumberAnimation
-            Children:
-            - Name: To
-              Id: g=7855d5a356fa1ad6ed9048b41cf777bc
-              Type: BaseDataVariableType
-              DataType: Float
-              Value: 920.0
-            - Name: Target
-              Id: g=bd63ef6bca1bf3abd9415a8bec925a22
-              Type: NodePointer
-              DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-              Children:
-              - Name: Kind
-                Id: g=6841c5aa555497f120bebbafead53c19
-                Type: PropertyType
-                DataType: NodeId
-                Value: {"Id":62}
-              - Name: DynamicLink
-                Id: g=318b81335468ed424c542c6528dc91a7
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../LeftMargin@NodeId"
-            - Name: Running
-              Id: g=dbe3e42e4006380c398675f230573653
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: From
-              Id: g=1a0eed7313d9866401e8f950365be386
-              Type: BaseDataVariableType
-              DataType: Float
-              ModellingRule: Optional
-              Value: 495.0
-            - Name: Duration
-              Id: g=ea541acf57015f393daf5b8942898942
-              Type: BaseDataVariableType
-              DataType: Int32
-              ModellingRule: Optional
-              Value: 3500
-        - Name: Loops
-          Id: g=f4b00492e2fc5bc386a76db9605f6154
-          Type: BaseDataVariableType
-          DataType: Int32
-          ModellingRule: Optional
-          Value: -1
-        - Name: Number(WAIT)2500ms
-          Id: g=074075b883ff1bf9846090de83f58977
-          Type: NumberAnimation
-          Children:
-          - Name: To
-            Id: g=f962166ffcacad0917cf8f68a05f1d67
-            Type: BaseDataVariableType
-            DataType: Float
-            Value: 0.0
-          - Name: Target
-            Id: g=5910af0dda6d11edeeb43b491f84600d
-            Type: NodePointer
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-            Children:
-            - Name: Kind
-              Id: g=7756b6aa38b586743a4959793919ba3b
-              Type: PropertyType
-              DataType: NodeId
-              Value: {"Id":62}
-            - Name: DynamicLink
-              Id: g=d827212cde85ab2450779c36e990dae6
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../Rotation@NodeId"
-          - Name: Running
-            Id: g=ad91e171b15f32137fcf7bc5bb6bf622
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Duration
-            Id: g=f7b39c689b20edd68eed774675663510
-            Type: BaseDataVariableType
-            DataType: Int32
-            ModellingRule: Optional
-            Value: 2500
     - Name: RobotPicker2
       Id: g=f4b6513ea4d7343ad863b1d2ab66d867
       Type: Image
@@ -21284,6 +20737,583 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 0.0
+    - Name: RobotPicker1
+      Id: g=6b633dca035886490814fdd259c34d8c
+      Type: Image
+      Children:
+      - Name: Path
+        Id: g=fcf4927f57c60df553b58b8447a1461a
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=38;%PROJECTDIR%/AnimationGraphics/Picker1.svg"
+      - Name: Width
+        Id: g=fbe37a68ceddecf70b90fecef66ee3cf
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+      - Name: Height
+        Id: g=a0ac48194e5baeb7b815cc04b42734d6
+        Type: BaseVariableType
+        DataType: Size
+        Value: 280.0
+      - Name: LeftMargin
+        Id: g=1e83d68c410dc4fcd4af6f7f4f97d0be
+        Type: BaseVariableType
+        DataType: Size
+        Value: 920.0
+      - Name: TopMargin
+        Id: g=247d44909b7f47c50bcfc6c3900bc5f3
+        Type: BaseVariableType
+        DataType: Size
+        Value: -150.0
+      - Name: FillMode
+        Id: g=919bfd84cf5afbe3f0587daf2de68ea8
+        Type: BaseDataVariableType
+        DataType: FillModeEnum
+        ModellingRule: Optional
+        Value: 0
+      - Name: Opacity
+        Id: g=abd1042211d98d3bfe1c6d2657bdccfe
+        Type: BaseVariableType
+        DataType: Float
+        Value: 100.0
+      - Name: Rotation
+        Id: g=4fd6d28fd5d9228f9c60bc69fb31ce11
+        Type: BaseVariableType
+        DataType: Size
+        Value: 0.0
+      - Name: Conveyor1ToConveyor2_11200ms
+        Id: g=d6ea286a048fead1f3a06f4440256b96
+        Type: SequentialAnimation
+        Children:
+        - Name: Running
+          Id: g=83e5deb86d61712a67a557b65b8dba34
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Id: g=471628423a4003b5503378f933a25e11
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../StartAnimation"
+        - Name: Wait2500ms
+          Id: g=6a5fdb9572ac858295e31f73f8b2addf
+          Type: NumberAnimation
+          Children:
+          - Name: To
+            Id: g=ab91e40410daf87abbfb7d5e40c158dd
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: -150.0
+          - Name: Target
+            Id: g=741b4a7cde3b1c724043cc0d2011155c
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=f560bd71d83141c4019fb729f58f021f
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":62}
+            - Name: DynamicLink
+              Id: g=ad1300531d678a5da1f341f2a6dabb35
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../TopMargin@NodeId"
+          - Name: Running
+            Id: g=8f0d08e2563a6edcbb3e7d8260910ee8
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Duration
+            Id: g=4d6fb1cc44b38ddf451695ee2125d294
+            Type: BaseDataVariableType
+            DataType: Int32
+            ModellingRule: Optional
+            Value: 2500
+          - Name: From
+            Id: g=9fb214d48f2e8a680eda055cdff9fce6
+            Type: BaseDataVariableType
+            DataType: Float
+            ModellingRule: Optional
+            Value: -150.0
+        - Name: NumberDown1000ms
+          Id: g=0dfb22b604c46650113bf7483152c1c6
+          Type: NumberAnimation
+          Children:
+          - Name: To
+            Id: g=48e5cf5df753c80a10d255cbabd7372f
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: -10.0
+          - Name: Target
+            Id: g=0a348db9fabdf09f3c2176e8189e6778
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=33c0a713b0e87792085044a79d22573f
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":62}
+            - Name: DynamicLink
+              Id: g=51136226e77a0e8efc68ef9e7d1e23d9
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../TopMargin@NodeId"
+          - Name: Running
+            Id: g=9a773e00e8ef32bc18106e9f95cb27bb
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: From
+            Id: g=c78026db5a3f417c19c78cc7b109e85e
+            Type: BaseDataVariableType
+            DataType: Float
+            ModellingRule: Optional
+            Value: -150.0
+        - Name: NumberUp1600ms
+          Id: g=28b33c4b612f5a1135e82cdf4f01ed13
+          Type: NumberAnimation
+          Children:
+          - Name: To
+            Id: g=ed059ffc09cc94c249ca7d2063e8c8c5
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: -150.0
+          - Name: Target
+            Id: g=2b6fcae24cdf417abc84fd2f651e0833
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=5a25cbbe3cee73cc0a9d457b38eb5334
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":62}
+            - Name: DynamicLink
+              Id: g=8bccb7c28926dcf31068ca6e90c04340
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../TopMargin@NodeId"
+          - Name: Running
+            Id: g=b5a2bc1cc2588eebc219893b0e2368a1
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Duration
+            Id: g=bbb33f8b1a7fcbba8efd27c5fc402323
+            Type: BaseDataVariableType
+            DataType: Int32
+            ModellingRule: Optional
+            Value: 1600
+          - Name: From
+            Id: g=9967bd97fd91937fdbcfc90c9dbd5901
+            Type: BaseDataVariableType
+            DataType: Float
+            ModellingRule: Optional
+            Value: -10.0
+        - Name: Parallel(POS1)2600ms
+          Id: g=bc7d007c2fa3480e63743f4ac88c088c
+          Type: ParallelAnimation
+          Children:
+          - Name: Running
+            Id: g=9c869fcf9bc6ede623b180ec6e56f6e6
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Number(LEFT)2000ms
+            Id: g=97a985a868b64dcd8483f54c4e0a3238
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Id: g=c812bf2991082f3232ec524fffed68c5
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 495.0
+            - Name: Target
+              Id: g=d664dcd93af1221d55b71e6d9c76826a
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=2d8eda7c16caa2b60c9491d4ec50cba1
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Id: g=fa3376002acefd9805f872eef1df5f8d
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../LeftMargin@NodeId"
+            - Name: Running
+              Id: g=ca1f238678405ccf1109578e3dafd29f
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: From
+              Id: g=0419370a7be0b5324f01e0c88a54eddd
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: 920.0
+            - Name: Duration
+              Id: g=cbe03cee5160f02883dd108e0f53e711
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 2000
+          - Name: Number(SIZE)2100ms
+            Id: g=abae474893414a47219231e6b6651ed1
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Id: g=f1b5223b9da1b8db20cf992cfe036fa5
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 137.0
+            - Name: Target
+              Id: g=28f1f0df882bf1f0ecaf64c83818d9da
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=703dde497fc9d2534d1f5a1735bb4621
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Id: g=19d3a6e390cb1c38ffe3b49ee1f56d09
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Height@NodeId"
+            - Name: Running
+              Id: g=222dd9262a9d91dbb4bc256adeac567e
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: From
+              Id: g=1967bc17f307586e52352704057e4388
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: 280.0
+            - Name: Duration
+              Id: g=418dfc8d67e7abcd02c766eafb95b6d9
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 2100
+          - Name: Number(DOWN)2600ms
+            Id: g=463d71116706f9af2da8c108bdd19a5e
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Id: g=98542af12803c6d007dc65ed494bf693
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: -5.0
+            - Name: Target
+              Id: g=98b6db5302e6eff39315fd8523058a81
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=787b1a3d3d6fcafa1c71a93f4ec6d3ae
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Id: g=646184cebd282cb000eddd391d8cfe58
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../TopMargin@NodeId"
+            - Name: Running
+              Id: g=1cb4e31720ccf5a114b2ad6676a485bb
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: From
+              Id: g=926c14079b6f4afb03df58fecab1ba44
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: -150.0
+            - Name: Duration
+              Id: g=ccc26b72a651be542e221c53ac953759
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 2600
+          - Name: Number(FADE)1800ms
+            Id: g=a16c354c5a624c6d363e87f2cb52c07c
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Id: g=3b6b2a81d43c8c4ef66fc0c21c26bafb
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 60.0
+            - Name: Target
+              Id: g=e0cb687a26478448cb5982c5c82bc032
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=1e8867e8be6a65fcd31b36e108915250
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Id: g=24a707bcad86e55351cabe42d157a8a9
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Opacity@NodeId"
+            - Name: Running
+              Id: g=b97ea321559d6c21be618bad20a3d890
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: From
+              Id: g=18c245c948a78d25478ebcdc5a04c131
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: 100.0
+            - Name: Duration
+              Id: g=7f53834d0ce38dcc4815db1228bb9210
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 1800
+        - Name: Parallel(POS0)3500ms
+          Id: g=ae159b65d5347537ab1b982ab2d61389
+          Type: ParallelAnimation
+          Children:
+          - Name: Running
+            Id: g=173f4aa883ce1a136944ac2ca2b54f6a
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Number(FADE)3500ms
+            Id: g=a9ec3190eea75afdaaa6f04602dc3a18
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Id: g=89aafa702b59344f680d109fc04c8698
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 100.0
+            - Name: Target
+              Id: g=abf6a2656e75b22bca92051edad07dbb
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=499719c98afc720053d18034936aa649
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Id: g=91decdb59883f4104aaf2fd1070d7f36
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Opacity@NodeId"
+            - Name: Running
+              Id: g=299d71c04d0e412e59e0ba9bc2a2c184
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: From
+              Id: g=79a4b3ac81b74a0963d960e10417fee1
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: 60.0
+            - Name: Duration
+              Id: g=dde4c5e6fdc5ee26eaa16c55437a6b67
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 3500
+          - Name: Number(UP)2550ms
+            Id: g=9700dc34fa7a729e3c5dc593ce3a5791
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Id: g=1987d8c4ee9b071915d0a75c36f7da87
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: -150.0
+            - Name: Target
+              Id: g=38edddfb3b03590c3eca93196b2f7a11
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=eb96a6375c2c7beb9fd0acf4dcbafcd8
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Id: g=4fc78d7361b7cbc1155acdb36b2319cf
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../TopMargin@NodeId"
+            - Name: Running
+              Id: g=9dd604b456c418c092e5c0f5089c7092
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: From
+              Id: g=6c3d790ac719334d03ebe190e490af16
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: -5.0
+            - Name: Duration
+              Id: g=32c587d154dd007b929b0c21def6f23c
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 2550
+          - Name: Number(SIZE)3500ms
+            Id: g=1bee222769ba1283da1e16da1aea9e60
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Id: g=6f431da477776080b0686560ef6998e3
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 280.0
+            - Name: Target
+              Id: g=a79792002772ee76fa2bfc4212d2b10f
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=b24332b5d38593761b50b6decdcc6653
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Id: g=85142c915aed0e2477fc271745bd6745
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Height@NodeId"
+            - Name: Running
+              Id: g=29da73720edfd539c09a3c84af2cb7e9
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: From
+              Id: g=ebaa4fc4d860b835ee01d4e29babc52b
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: 137.0
+            - Name: Duration
+              Id: g=d7497c9496cedd5fb34953f4f3cd8cec
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 3500
+          - Name: Number(RIGHT)3500ms
+            Id: g=deef42dea82d1fb4ad8e055d8d3e2bcc
+            Type: NumberAnimation
+            Children:
+            - Name: To
+              Id: g=15592297b60da306058ee06b21fe032b
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 920.0
+            - Name: Target
+              Id: g=db5c2cbcbfe44159469774fd793867a1
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Id: g=411ac83d5d4672da5a7a99661e5722bc
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":62}
+              - Name: DynamicLink
+                Id: g=50210cf802d1992e08b5e84d57841bfc
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../LeftMargin@NodeId"
+            - Name: Running
+              Id: g=aa3943f9dae7d385e80280e580401294
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: From
+              Id: g=5a1c9b6b35c83b6abbe7d7fdfb2d5722
+              Type: BaseDataVariableType
+              DataType: Float
+              ModellingRule: Optional
+              Value: 495.0
+            - Name: Duration
+              Id: g=2908f4d576bc9f8dfb4249599a15df83
+              Type: BaseDataVariableType
+              DataType: Int32
+              ModellingRule: Optional
+              Value: 3500
+        - Name: Number(WAIT)2500ms
+          Id: g=9ea359d0c2c5f8cb77aaccbb072d34cb
+          Type: NumberAnimation
+          Children:
+          - Name: To
+            Id: g=f25fcbe3bc160f1ef1bcc267f7f7bd9a
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 0.0
+          - Name: Target
+            Id: g=b86201ac7cc32dcc1dbba1b0b245c04d
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=2682028ad98ef3051db90cd238cfc079
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":62}
+            - Name: DynamicLink
+              Id: g=20475181a33cd4df4e299ca75cf0d513
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Rotation@NodeId"
+          - Name: Running
+            Id: g=d695d27b63af3c7c06cfa812454eb998
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Duration
+            Id: g=d0b59a490c037fa46593b590bee2d3e0
+            Type: BaseDataVariableType
+            DataType: Int32
+            ModellingRule: Optional
+            Value: 2500
+        - Name: Loops
+          Id: g=a851ba55036fde04670dbb4eea772045
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: -1
   - Name: L4
     Id: g=587cd1e93e38da73286534fdc3e54028
     Type: Panel
