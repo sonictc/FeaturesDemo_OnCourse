@@ -86,3 +86,8 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
+- Name: Variable4
+  Id: g=a5ebf040f75702db46729e15439fbcb2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

@@ -21,6 +21,7 @@ using FTOptix.Modbus;
 using FTOptix.Retentivity;
 using FTOptix.CommunicationDriver;
 using FTOptix.Core;
+using FTOptix.ODBCStore;
 #endregion
 
 public class ProjectLoadedLogLogic : BaseNetLogic

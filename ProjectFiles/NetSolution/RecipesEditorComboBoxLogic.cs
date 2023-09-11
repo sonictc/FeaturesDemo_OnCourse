@@ -2,6 +2,7 @@
 using FTOptix.Recipe;
 using FTOptix.UI;
 using UAManagedCore;
+using FTOptix.ODBCStore;
 #endregion
 
 public class RecipesEditorComboBoxLogic : FTOptix.NetLogic.BaseNetLogic {

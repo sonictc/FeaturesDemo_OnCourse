@@ -3,6 +3,7 @@ using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using UAManagedCore;
 using FTOptix.UI;
+using FTOptix.ODBCStore;
 #endregion
 
 public class VariablesEnhancer : BaseNetLogic {

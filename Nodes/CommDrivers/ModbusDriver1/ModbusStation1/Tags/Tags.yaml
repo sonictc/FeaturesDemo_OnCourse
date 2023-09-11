@@ -73,3 +73,24 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt16
         Value: 2
+- Name: Variable1
+  Id: g=67e77f50633e9739888be9289c9a4fc2
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: NumRegister
+    Id: g=ca64e95e7a59db2e9dcc977d72fa9b5f
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: ArrayUpdateMode
+    Id: g=6bf9791129061f4ab54d0b35ddf15b7e
+    Type: BaseDataVariableType
+    DataType: TagArrayUpdateMode
+    Value: 0
+  - Name: MaximumLength
+    Id: g=cf2df706eca7ab9275b55c2907691aca
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10

@@ -287,7 +287,7 @@ Children:
     Id: g=19b76fb1518ef83e45cd63ca817a8012
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
     Children:
     - Name: IPAddress
       Id: g=2e926d6016f32d54f92247897e0da22c
@@ -451,24 +451,24 @@ Children:
     Id: g=74e687797b1e23aa25c1fe9c74bcf914
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
     Children:
     - Name: LiveTags
       Id: g=773ce195abd0cce983b5932b03805f3b
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
+      Value: true
       Children:
       - Name: LiveTagsPeriod
         Id: g=5a745e07fb8b3f778cfc5750abb7901e
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:0.0000000"
+        Value: "0:00:00:1.0000000"
       - Name: LiveTagsFolder
         Id: g=e2054610bd0ac714ecfb5fe3cd2ee9e0
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Value: {"IdType":2,"Id":"7a49f30e13f515d66fe54d57d266db2e","Namespace":38}
         Children:
         - Name: Kind
           Id: g=8ec2ab2a2ca339c801bbfd340aae3876
@@ -484,7 +484,7 @@ Children:
         Id: g=24924516e0676fec0325b316ebe8d87c
         Type: BaseDataVariableType
         DataType: String
-        Value: "sonic/optix/Jirawuth"
+        Value: "rockwell/tag/jirawuth"
       - Name: QoS
         Id: g=fd4ac5d7679afcd624fd4bffd2ebba91
         Type: BaseDataVariableType
@@ -631,4 +631,4 @@ Children:
     Id: g=9c1d14daf344821f7819d7fddc39e1f7
     Type: BaseDataVariableType
     DataType: String
-    Value: "bXVKuoork7L8GkOsykDt6J5VkUSXic7mCNfscbSi7d3"
+    Value: "CJG1MYBubJty79aarZXU59bqTYfNjdKVNR5jdzbNgVO"

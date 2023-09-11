@@ -37,6 +37,7 @@ using Newtonsoft.Json.Linq;
 using FTOptix.Recipe;
 using FTOptix.OPCUAServer;
 using FTOptix.CommunicationDriver;
+using FTOptix.ODBCStore;
 using Encoding = System.Text.Encoding;
 using OpcUa = UAManagedCore.OpcUa;
 

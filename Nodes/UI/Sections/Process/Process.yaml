@@ -5179,6 +5179,12 @@ Children:
         DataType: SortOrderEnum
         ModellingRule: Optional
         Value: 1
+      - Name: AutoRefreshTime
+        Id: g=f4763a5e7a050e6c0ef732b71032edd2
+        Type: BaseDataVariableType
+        DataType: Duration
+        ModellingRule: Optional
+        Value: "0:00:00:0.0000000"
     - Name: RecordedEvents
       Id: g=abc2c1f035325a193971aba822c45a13
       Type: QWindowWithTitleBar
@@ -5483,5 +5489,45 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{NodeId:ns=38;g=118f122c-d861-f205-4736-ba5249d5dece}@Pointer"
+    - Name: TextBox1
+      Id: g=26d67af4e40ab570b97c3ae7e1b55de1
+      Type: TextBox
+      Children:
+      - Name: Text
+        Id: g=f245b43be81aa6db65d67ca5076e5c75
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Id: g=b74fc08e793d5c9e73bdc6767e09b23c
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=38;g=a5ebf040-f757-02db-4672-9e15439fbcb2}"
+          Children:
+          - Name: Mode
+            Id: g=878a07ce25200c8c7f736345858dcd05
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Width
+        Id: g=3bf250a33c05c3a3dec924a61235a9e1
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: LeftMargin
+        Id: g=fa50f25c0cb0c8052f2b75e4b8cdf38a
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 100.0
+      - Name: TopMargin
+        Id: g=70e2bd52631ded7ad1ef9df8bda97ed6
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 459.0
 - File: Hmi1/Hmi1.yaml
 - File: PopupInfo/PopupInfo.yaml

@@ -185,56 +185,6 @@ Children:
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
-    - Name: AuditEventLogger
-      Id: g=a8bd00ac7d25f3fd17897e928b60f6b7
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=23;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=23;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=23;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=23;i=20
-        Direction: Forward
-      - Name: Columns
-        Id: g=642df541d257cabb36ff42bfa6a2a1b1
-        Type: BaseObjectType
-        Children:
-        - Name: LocalTime
-          Id: g=44154aad263563a48147fb49afb02ce6
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Time
-          Id: g=b2ee0a0972f16d648586df9ba6a3c565
-          Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: EventType
-          Id: g=3faec30211252855a3fbd6ae95980806
-          Type: StoreColumn
-          DataType: String
-          Value: ""
-        - Name: ClientUserId
-          Id: g=709dccd7efcc6a2cad0580edba65e856
-          Type: StoreColumn
-          DataType: String
-          Value: ""
-        - Name: SourceName
-          Id: g=2e63e06a092be18c592f0c152a588c34
-          Type: StoreColumn
-          DataType: String
-          Value: ""
-        - Name: ValueChange
-          Id: g=b52e27b0ab70a728ac3daaaf347e4217
-          Type: StoreColumn
-          DataType: String
-          Value: ""
     - Name: Stylesheet
       Id: g=5cf948d86a029285f5767f3e8bf43bbe
       Type: SQLiteStoreTable
@@ -407,3 +357,155 @@ Children:
     - Class: Method
       Name: InsertRandomValues
       Id: g=3086a71d9d837a0ad26ddec083d67756
+- Name: SQLEXPRESS
+  Id: g=31fb94093c9e9eaed0e2805fdefb347e
+  Type: ODBCStore
+  Children:
+  - Name: Tables
+    Id: g=56dce69ba01fb115ad0a5cb8266b4cdf
+    Type: BaseObjectType
+    Children:
+    - Name: AuditEventLogger
+      Id: g=2503a432005f15e175d6f5154d06809d
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=23;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=9bf9d1df76f78822305cd6b2030a3b77
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTime
+          Id: g=44154aad263563a48147fb49afb02ce6
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Time
+          Id: g=b2ee0a0972f16d648586df9ba6a3c565
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: EventType
+          Id: g=3faec30211252855a3fbd6ae95980806
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: ClientUserId
+          Id: g=709dccd7efcc6a2cad0580edba65e856
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: SourceName
+          Id: g=2e63e06a092be18c592f0c152a588c34
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: ValueChange
+          Id: g=b52e27b0ab70a728ac3daaaf347e4217
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+  - Name: Type
+    Id: g=d39b3dcef5fdd13d26ba107a80dd8094
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 2
+  - Name: Username
+    Id: g=9cf4399167fe476da083d13056fef594
+    Type: PropertyType
+    DataType: String
+    Value: "sa"
+  - Name: Password
+    Id: g=17ae9b5f71c2609050210aafef148700
+    Type: PropertyType
+    DataType: Password
+    Value: "P@ssw0rd"
+  - Name: MaxColumnNameLength
+    Id: g=5c88920953a0074a018a95b6a6c547bf
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Id: g=96eceaaba731f6a2d91b761ab4b74a46
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Id: g=57ba5ee1cce6dba0dcb26884b5bb84f0
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Id: g=45c610cdf08008c77406933c15357dac
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=23;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=59
+    Direction: Forward
+  - Name: DSN
+    Id: g=d98a90b1a092c4f4e0f2b9e42ec955f1
+    Type: PropertyType
+    DataType: String
+    Value: ""
+  - Name: Server
+    Id: g=14251f2b5e24130aaf2a0c645ed0a813
+    Type: PropertyType
+    DataType: String
+    Value: ".\\SQLEXPRESS"
+  - Name: Port
+    Id: g=0ff9518d97a313082e2c1c044ca12dd6
+    Type: PropertyType
+    DataType: UInt16
+    Value: 1433
+  - Name: Database
+    Id: g=42d911fe209ad4740675088815b498c1
+    Type: PropertyType
+    DataType: String
+    Value: "OptixDB"

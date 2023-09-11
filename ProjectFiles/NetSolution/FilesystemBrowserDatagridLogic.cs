@@ -8,6 +8,7 @@ using System;
 
 using FilesystemBrowser;
 using FTOptix.UI;
+using FTOptix.ODBCStore;
 
 public class FilesystemBrowserDatagridLogic : BaseNetLogic {
     public override void Start() {

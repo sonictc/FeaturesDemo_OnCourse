@@ -153,5 +153,13 @@ Project:
    Uri: 'urn:FTOptix:CODESYS:Net'
    Module: FTOptix.CODESYS.Net
    Version: 2.0
+  39:
+   Uri: 'urn:FTOptix:ODBCStore'
+   Module: FTOptix.ODBCStore
+   Version: 1.0
+  40:
+   Uri: 'urn:FTOptix:ODBCStore:Net'
+   Module: FTOptix.ODBCStore.Net
+   Version: 1.0
  Nodes:
  - File: Nodes/FeaturesDemo_OnCourse.yaml

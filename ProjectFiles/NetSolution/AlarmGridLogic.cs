@@ -1,6 +1,7 @@
 #region StandardUsing
 using FTOptix.UI;
 using UAManagedCore;
+using FTOptix.ODBCStore;
 #endregion
 
 public class AlarmGridLogic : FTOptix.NetLogic.BaseNetLogic {

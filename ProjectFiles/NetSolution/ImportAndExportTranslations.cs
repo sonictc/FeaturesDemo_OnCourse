@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using UAManagedCore;
 using FTOptix.UI;
+using FTOptix.ODBCStore;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

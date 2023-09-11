@@ -2,6 +2,7 @@ using System.Net;
 using System.Net.Mail;
 using UAManagedCore;
 using FTOptix.UI;
+using FTOptix.ODBCStore;
 
 public class EmailSenderLogic : FTOptix.NetLogic.BaseNetLogic {
     [FTOptix.NetLogic.ExportMethod]

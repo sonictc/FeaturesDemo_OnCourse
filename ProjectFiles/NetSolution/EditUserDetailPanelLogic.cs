@@ -7,6 +7,7 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.OPCUAServer;
 using FTOptix.UI;
+using FTOptix.ODBCStore;
 #endregion
 
 public class EditUserDetailPanelLogic : BaseNetLogic

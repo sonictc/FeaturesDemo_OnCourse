@@ -20,6 +20,7 @@ using FTOptix.DataLogger;
 using FTOptix.Store;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
+using FTOptix.ODBCStore;
 #endregion
 
 public class LineNotification : BaseNetLogic

@@ -5,6 +5,7 @@ using FTOptix.Store;
 using System;
 using UAManagedCore;
 using FTOptix.UI;
+using FTOptix.ODBCStore;
 #endregion
 
 public class InsertValues : BaseNetLogic {

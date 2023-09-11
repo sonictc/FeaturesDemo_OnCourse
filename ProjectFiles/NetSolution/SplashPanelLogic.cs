@@ -4,6 +4,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using System;
 using UAManagedCore;
+using FTOptix.ODBCStore;
 #endregion
 
 public class SplashPanelLogic : BaseNetLogic {

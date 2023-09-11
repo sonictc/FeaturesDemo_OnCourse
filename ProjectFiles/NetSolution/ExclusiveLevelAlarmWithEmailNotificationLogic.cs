@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using UAManagedCore;
 using FTOptix.UI;
+using FTOptix.ODBCStore;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

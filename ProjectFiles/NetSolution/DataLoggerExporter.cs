@@ -7,6 +7,7 @@ using System.IO;
 using System.Text;
 using UAManagedCore;
 using FTOptix.UI;
+using FTOptix.ODBCStore;
 #endregion
 
 public class DataLoggerExporter : BaseNetLogic {
